@@ -21,3 +21,4 @@ void ensureFailed(int expr, char *assertion, unsigned char count, char *file, un
     fprintf(stderr, "\x1b[31m%s:%d %s: Assertion \x1b[1m\'%s\'\x1b[0m\x1b[31m does not hold\x1b[0m\n", file, line, function, assertion);
     exit(count);
 }
+

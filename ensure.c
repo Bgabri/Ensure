@@ -2,9 +2,11 @@
 #include <stdlib.h>
 
 #include "ensure.h"
+
 #ifdef which_run_error
-     unsigned char big256[8] = {0};
+    unsigned char big256[8] = {0};
 #endif
+
 void ensureFailed(int expr, char *assertion, unsigned char count, char *file, unsigned int line, const char *function) {
     
     #ifdef which_run_error

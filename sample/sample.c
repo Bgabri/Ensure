@@ -7,7 +7,6 @@
 // Add offset
 INCREMENT_COUNT(0, 4, 2);
 
-
 int sumOfNums(int *nums, int start, int end) {
     if (start == end) return 0;
     return nums[start] + sumOfNums(nums, start+1, end);

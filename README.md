@@ -1,8 +1,7 @@
-# Ensure
-
+# ${\color{Dandelion}ensure.c}$
 A compile/run time assertion checker with unique exit error codes.
 
-## Usage
+## usage
 A counter is used to give the assertions unique exit errors
 starting from `0` with a maximum of `255`. The counter is reset between 
 files, so it is recommended to offset the counter using the
@@ -27,7 +26,7 @@ At run time:
 ```c
     -D which_run_error
 ```
-### ![Sample](https://github.com/Bgabri/Ensure/blob/main/sample.c)
+### ![sample](https://github.com/Bgabri/Ensure/blob/main/sample/sample.c)
 ```C
 #include <stdio.h>
 #include <stdlib.h>
@@ -68,4 +67,9 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-Available ![here](https://github.com/Bgabri/Ensure/blob/main/sample.c)
+### output
+#### compile time
+<img src="https://github.com/Bgabri/Ensure/blob/main/sample/out_compile.png" width="700px">
+
+#### run time
+<img src="https://github.com/Bgabri/Ensure/blob/main/sample/out_run.png" width="700px">

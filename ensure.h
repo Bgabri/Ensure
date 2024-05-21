@@ -98,7 +98,7 @@
 /* * * * * * * * * * * * * * * * * * * * *
  *         Compile Time Warnings         *
  * * * * * * * * * * * * * * * * * * * * */
-#define _CONCAT(a,b) a b
+#define _CONCAT(a,b) a##b
 #define CONCAT(a,b) _CONCAT(a, b)
 
 #define _STRING(a) #a

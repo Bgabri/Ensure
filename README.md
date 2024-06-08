@@ -11,8 +11,8 @@ files, so it is recommended to offset the counter using the
 Simply invoke ensure(expression) 
 ```c
 INCREMENT_COUNT(0, 4, 2); // offset the counter by 42 
-ensure(1 + 1 == 2) // holds true, does not exit with 42 
-ensure(1 + 1 == 3) // holds false, exits with 43 
+ensure(1 + 1 == 2); // holds true, does not exit with 42 
+ensure(1 + 1 == 3); // holds false, exits with 43 
 ```
 
 To check the corrsponding exit error of an ensure use the following 

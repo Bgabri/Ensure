@@ -16,8 +16,8 @@
  * Simply invoke ensure(expression)                                      *
  *                                                                       *
  * INCREMENT_COUNT(0, 4, 2); // offset the counter by 42                 *
- * ensure(1 + 1 == 2) // holds true, does not exit with 42               *
- * ensure(1 + 1 == 3) // holds false, exits with 43                      *
+ * ensure(1 + 1 == 2); // holds true, does not exit with 42               *
+ * ensure(1 + 1 == 3); // holds false, exits with 43                      *
  *                                                                       *
  *                                                                       *
  * To check the corrsponding exit error of an ensure use the following   *
@@ -92,7 +92,7 @@
 #define INCREMENT_COUNT(_100, _10, _1) \
     int CONCAT(CONCAT(__total_count__, __LINE__), CONCAT(__,CONCAT(CONCAT(_100, _10), _1))) = COUNT_0_##_1() + \
     COUNT_1_##_10() + \
-    COUNT_2_##_100();
+    COUNT_2_##_100()
 
 
 /* * * * * * * * * * * * * * * * * * * * *

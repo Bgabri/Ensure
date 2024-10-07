@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     func();
 
-    ensure(!!!45); // exit code 45
+    ensuref(!!!45, "!!!45 does not hold\n"); // exit code 45
 
     return 0;
 }
